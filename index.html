@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header nav {
+	background-color: #4CAF50;
+} 
+
+header h1 {
+	text-color: #fff;
+}
+
+header nav img {
+	width: 150px;
+	height: 110px;
+    margin-right: 10px;
+	vertical-align: middle;
+}
+	
+	
+header nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+main section img{
+      width: 100%;
+      height: auto;
+	  overflow: hidden;
+    }
+ .container {
+            display: flex;
+            gap: 10px; /* Space between blocks */
+        }
+ .block {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #f9f9f9;
+        }
+		
+button {
+  margin-bottom: 10px;
+  background-color: black;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 10px 60px;
+}
+		
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+}
+</style>
+
+</head>
+<body>
+  <header>
+	<h1>Welcome to Our Educational Platform</h1>
+	
+	<nav>
+	  <img src="download.png" class="img-fluid">
+	  <a href="front.html"><i class="fas fa-home"></i> Home</a>
+	  <a href="about.html"><i class="fas fa-info-circle"></i> About Us</a>
+      <a href="courses.html"><i class="fas fa-book"></i> Courses</a>
+      <a href="quiz.html"><i class="fas fa-question-circle"></i> Quiz</a>
+      <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+	  <a href="register.html"><i class="fas fa-user-plus"></i> Register</a>
+	  <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+  </header>
+
+
+
+	
+  <main>
+    <section class="introduction">
+	  <img src="EduPertz.png" alt="back">
+    </section>
+	<section>
+	<div class="container">
+	 <div class="block">
+        <h2 style="color: red;">ABOUT EduPertz</h2>
+        <p>Welcome to <i>EduPertz</i>, your one-stop solution for all your educational needs.</p>
+		<p>We're passionate about empowering learners of all ages. Our mission is to provide high-quality, accessible educational resources and tools that make learning engaging and effective.</p>
+    </div>
+    <div class="block">
+        <h2 style="color: red;">WHAT EduPertz OFFERS ??</h2>
+		<p><b>Comprehensive Study Materials:</b> From textbooks and notes to practice tests and quizzes, we have everything you need to excel in your studies.</p>
+		<p><b>Expert Guidance:</b> Our team of experienced educators is dedicated to providing personalized support and guidance.</p>
+		<p><b>Interactive Learning Tools:</b> Engage with the subject matter through interactive simulations, videos, and other innovative learning techniques.</p>
+		<p><b>Community Forum:</b> Connect with fellow learners, share knowledge, and discuss academic topics.</p>
+    </div>
+    <div class="block">
+        <h2 style="color: red;">Why Choose EduPertz?</h2>
+        <p><b>Quality Content:</b> Our content is carefully curated and reviewed by experts to ensure accuracy and relevance.</p>
+		<p><b>User-Friendly Interface:</b> Our platform is designed to be easy to navigate, even for beginners.</p>
+		<p><b>Affordable Pricing:</b> We believe that education should be accessible to all, which is why we offer competitive pricing.</p>
+		<p><b>Exceptional Customer Support:</b> Our dedicated support team is always ready to assist you with any questions or concerns.</p>
+    </div>
+	</div>
+	 <div class="block" style="background:#d3d3d3;" >
+        <h2 style="font-size:40px; color:blue;"><i>START YOUR LEARNING JOURNEY WITH EduPertz<i></h2>
+        <p style="font-size: 20px;">Join the EduPertz community today and embark on a journey of lifelong learning.</p>
+		<a href="courses.html">
+    <button class="button" style="font-size: 20px;">Explore Our Courses</button>
+	</a>
+    </div>
+	<div class="block">
+    </div>
+	</section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Educational Platform. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

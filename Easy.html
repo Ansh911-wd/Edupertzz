@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>quuiz</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+  .container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+	border: 0.2rem solid black;
+	position:absolute;
+	top: 25%;
+	left: 35%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+.subjects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.subject {
+    background-color: #e8f1f2;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.subject h2 {
+    margin-bottom: 10px;
+    color: #005f73;
+	font-size: 28px;
+}
+
+.answer {
+            display: none; /* Initially hide the answer */
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e7f3fe;
+            border: 1px solid #2196f3;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+  </style>
+  
+</head>
+
+<body>
+  <header>
+    <h1>MATHEMATICS QUIZ</h1>
+    <nav>
+      <img src="download.png" class="img-fluid">
+	  <a href="index.html"><i class="fas fa-home"></i> Home</a>
+	  <a href="about.html"><i class="fas fa-info-circle"></i> About Us</a>
+      <a href="courses.html"><i class="fas fa-book"></i> Courses</a>
+      <a href="quiz.html"><i class="fas fa-question-circle"></i> Quiz</a>
+      <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+	  <a href="register.html"><i class="fas fa-user-plus"></i> Register</a>
+	  <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+  </header>
+  <div class="container">
+     <div class="subjects">
+	 <h1>INTERMEDIATE LEVEL</h1>
+            <div class="subject">
+                <p><b>1. Consider a random variable X that takes values + 1 and-1 with probability 0.5 each. The values of the cumulative distribution function F(x) at x = – 1 and + 1 are</b></p>
+                <div class="levels">
+				<form>
+				<label><input type="radio" name="inline" />(A) 0 and 0.5</label><br>
+				<label><input type="radio" name="inline" />(B) 0 and 1</label><br>
+				<label><input type="radio" name="inline" />(C) 0.5 and 1</label><br>
+				<label><input type="radio" name="inline" />(D) 0.25 and 0.75</label><br>
+				</form>
+				 <button onclick="showAnswer()">Show Answer</button>
+
+       <div class="answer" id="answerBox">
+        The correct answer is <b>option(C) 0,5 and 1</b>.
+       </div>
+	    <script>
+        function showAnswer() {
+            const selectedOption = document.querySelector('input[name="inline"]:checked');
+            const answerBox = document.getElementById('answerBox');
+
+            if (selectedOption) {
+                answerBox.style.display = 'block'; 
+            } else {
+                alert('Please select an option first!');
+            }
+        }
+        </script>
+                </div>
+            </div>
+
+            <div class="subject">
+                <p><b>2. Consider the following two statements with respect to the matrices Am x n, Bn x m, Cn x n, Dn x n.</p>
+				<p>Statement 1 : tr(AB) = tr(BA)</p>
+				<p>Statement 2 : tr(CD) = tr(DC)</p>
+				<p>where tr( ) represents the trace of a matrix. Which one of the following holds? </b></p>
+                <div class="levels">
+				<form>
+				<label><input type="radio" name="choose" />(A) Statement 1 is correct and Statement 2 is wrong</label><br>
+				<label><input type="radio" name="choose" />(B) Statement 1 is wrong and Statement 2 is correct</label><br>
+				<label><input type="radio" name="choose" />(C) Both Statement 1 and Statement 2 are correct</label><br>
+				<label><input type="radio" name="choose" />(D) Both Statement 1 and Statement 2 are wrong</label><br>
+				</form>
+				<button onclick="showAnswer1()">Show Answer</button>
+	        <div class="answer" id="answerBox1">
+        The correct answer is <b>option(C) Both Statement 1 and Statement 2 are correct</b>.
+            </div>
+	    <script>
+        function showAnswer1() {
+            const selectedOption = document.querySelector('input[name="choose"]:checked');
+            const answerBox = document.getElementById('answerBox1');
+
+            if (selectedOption) {
+                answerBox.style.display = 'block'; 
+            } else {
+                alert('Please select an option first!');
+            }
+        }
+    </script>
+                </div>
+            </div>
+
+     
+        </div>
+    </div>
+	
+  </body>
+</html>

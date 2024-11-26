@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <style>
+  header {
+  background-color: black;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  }
+  
+  header nav {
+  background-color: black;
+  }
+  
+ header nav a {
+  color: #fff;
+  margin: 0 15px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+	  overflow: hidden;
+    }
+body {
+background-image: url('front.png');
+}
+    .image-container .button {
+	  position: absolute;
+      top: 38.5%; /* Center vertically */
+      left: 19.5%; /* Center horizontally */
+      transform: translate(-50%, -50%);
+      padding: 10px 60px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .image-container .button:hover {
+      background-color: #0056b3;
+    }
+  
+  footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+  </style>
+</head>
+<body>
+  <header>
+	<nav>
+	  <a href="index.html"> Home</a>
+	  <a href="about.html"> About Us</a>
+	  <a href="contact.html"> Contact</a>
+    </nav>
+  </header>
+  
+  <body>
+  <div class="image-container">
+    <img src="front.png" alt="Main">
+	<a href="index.html">
+    <button class="button">GET STARTED</button>
+	</a>
+  </div>
+</body>
+
+  <footer>
+    <p>&copy; 2024 Educational Platform. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

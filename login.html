@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Register</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+  	body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: white;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+.container{
+border: none;
+background: gray;
+align-content:centre;
+width: 40%;
+height: 100%;
+position: absolute;
+top: 25%;
+left: 30%;
+} 
+button {
+  margin-bottom: 10px;
+  background-color: #3b3b4f;
+
+  font-color: white;
+  width: 40%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  content: centre;
+}
+
+.inline{
+  display: inline; 
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+  <h1>LOGIN IN YOUR EXISTING ACCOUNT</h1>
+    <nav>
+      <img src="download.png" class="img-fluid">
+	  <a href="index.html"><i class="fas fa-home"></i> Home</a>
+	  <a href="about.html"><i class="fas fa-info-circle"></i> About Us</a>
+      <a href="courses.html"><i class="fas fa-book"></i> Courses</a>
+      <a href="quiz.html"><i class="fas fa-question-circle"></i> Quiz</a>
+      <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+	  <a href="register.html"><i class="fas fa-user-plus"></i> Register</a>
+	  <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+  </header>
+  
+<div class="container">
+<h1>Login</h1>
+<p>Enter the following details to login</p>
+<form method="post"  id="loginForm">
+      <fieldset>
+        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" style="width: 100%;" required /></label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required style="width: 100%;" /></label>
+        <label for="username">Enter Your username: <input id="username" name="username" type="text" required style="width: 100%;" /></label>
+        <label for="password">Enter the Password: <input id="password" name="password" type="password" pattern="[a-z0-5]{8,}" required style="width: 100%;" /></label>
+      </fieldset>
+	  <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+       <button type="submit" style="color: black;">Login</button>
+</form>	  
+</div>
+  <footer>
+    <p>&copy; 2024 Educational Platform. All rights reserved.</p>
+  </footer>
+</html>
